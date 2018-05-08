@@ -2,7 +2,7 @@ PIP=.venv/bin/pip
 PYTEST=.venv/bin/pytest
 
 test:clean
-	PYTHONPATH=zeroubouce ${PYTEST} -s -v tests
+	PYTHONPATH=zeroubouce ${PYTEST} -s -v tests/${path}
 
 venv:
 	virtualenv .venv
